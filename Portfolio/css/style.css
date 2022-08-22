@@ -1,0 +1,73 @@
+/*.container, .container-md, .container-fluid{
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #D35400;
+	color: white;
+}*/
+
+.col-md-6, .col-sm, .col-md-5, .col-6, .col, .col-4, .col-3, .col-5{
+	
+}
+
+.illustration{
+}
+
+#Group1{
+	transform: translate(-20%, 0);
+	animation: moveStar 3s 1s both;
+}
+
+#Group2{
+	transform: translate(30%, -10%);
+	animation: moveStar 3s 1s both;
+}
+@keyframes moveStar{
+	100%{
+		transform: unset;
+	}
+}
+.fondo{
+	background-image: url('../assets/fondo1.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbarfondo{
+	--bs-bg-opacity: 0 !important;
+}
+
+/* ExperienciaLaboral */
+.text-titulo{
+    color: #920092;
+}
+.linea{
+    border-left: 3px solid #920092 !important;
+}
+.card-exper{
+    transition: all 0.7s !important;
+    box-shadow: 3px 3px 3px 3px #f0f0f0;
+}
+.card-exper:hover{
+    transform: scale(1.02) !important;
+    box-shadow: 3px 3px 3px 1px #920092;
+}	
+
+/*x-small*/
+@media (max-width: 576px){
+	.letra{
+		color: black;
+	}
+.navbarfondo{
+	--bs-bg-opacity: 1 !important;
+	}
+#Group1{
+	transform: translate(-20%, 0);
+	animation: moveStar 3s 2s both;
+}
+
+#Group2{
+	transform: translate(30%, -10%);
+	animation: moveStar 3s 2s both;
+}
+}
